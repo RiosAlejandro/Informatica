@@ -1,0 +1,274 @@
+html{
+	font-size: 62.5%; /**reset para rems -62.5% =10px de 16... esta cuenta es para hacer que un rem valga 10px**/
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2;
+	background-color: #f2f2f2;
+}
+
+/** Colores**/
+/*#6867FF, #6599FF, #66CBFF, #66FEFF;*/
+/** Fuentes **/
+/*font-family: 'Noto Sans', sans-serif;
+font-family: 'Martel Sans', sans-serif;*/
+
+
+/** globales**/
+.contenedor{
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4{
+	font-family: 'Martel Sans', sans-serif;;
+}
+
+h1{
+	font-size: 4.8rem;
+	text-align: center;
+	margin-top: 25px;
+	color: #6867FF;
+	text-transform: uppercase;
+	text-shadow: 4px 1px rgba(102,251,255,0.58);
+}
+h2{
+	font-size: 4rem;
+	line-height: 1;
+	text-align: center;
+	color: #6867FF;
+}
+h3{
+	font-size: 3.2rem;
+	text-align: center;
+	color: #6867FF;
+}
+h4{
+	font-size: 2.8rem;
+}
+.charly{
+	margin-top: 20px;
+}
+
+
+/**utilidades**/
+.centrar-texto{
+	text-align: center;
+}
+.no-margin{
+	margin:0;
+}
+
+
+
+/**header**/
+header.site-header {
+	height: auto;
+	padding: 20px 0; 
+}
+div.alfa{
+	background-color: #6599FF;
+	padding: 15px;
+	-webkit-box-shadow: 0px 3px 3px 2px rgba(102,251,255,0.39);
+	-moz-box-shadow: 0px 3px 3px 2px rgba(102,251,255,0.39);
+	box-shadow: 0px 3px 3px 2px rgba(102,251,255,0.39);
+}
+div.logo{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.logo img{
+	width: 100%;
+	background-position: center;
+	-webkit-box-shadow: 2px 9px 46px 17px rgba(255,255,255,0.79);
+	-moz-box-shadow: 2px 9px 46px 17px rgba(255,255,255,0.79);
+	box-shadow: 2px 9px 46px 17px rgba(255,255,255,0.79);
+}
+@media only screen and (min-width: 768px) {
+	div.alfa{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px;
+	}
+}
+@media only screen and (min-width: 768px){
+	div.logo{	
+		margin-left: 0;
+		width: 30%;
+	}
+} 
+@media only screen and (min-width: 768px){
+	div.logo img{
+		width: 50%;
+	}	
+}
+
+/** Titulo **/
+div.titulo{
+	-webkit-box-shadow: -1px -1px 26px 3px rgba(102,251,255,0.58);
+	-moz-box-shadow: -1px -1px 26px 3px rgba(102,251,255,0.58);
+	box-shadow: -1px -1px 26px 3px rgba(102,251,255,0.58);
+}
+
+/** navegacion principal **/
+.navegacion-principal{
+	text-align: center;
+	margin-top: 1rem;
+	background-color: white;
+	border: 1px solid #66CBFF;
+	-webkit-box-shadow: inset 0px 0px 32px -13px rgba(102,251,255,0.46);
+	-moz-box-shadow: inset 0px 0px 32px -13px rgba(102,251,255,0.46);
+	box-shadow: inset 0px 0px 32px -13px rgba(102,251,255,0.46);
+}
+.navegacion-principal a{
+	margin-right: 1em;
+	text-decoration: none;
+	color: #6599FF;
+	
+}
+.navegacion-principal a:last-of-type{
+	margin-right: 0;
+}
+.navegacion-principal a:hover{
+	background-color: #66CBFF;
+}
+
+/* Portada**/
+div.parallax::before{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position: 37% 30%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-attachment: fixed;
+}
+div.portada{
+	position: relative;
+	height: 35vh;
+}
+div.portada::before{
+	background-image: url(../img/portada.jpg);
+	content: '';
+}
+
+@media only screen and (min-width: 768px) {
+	div.portada {
+		height: 50vh;
+	}
+}
+
+/** Contenedor principal**/
+
+div.card{
+	height: auto;
+	margin-top: 2rem;
+}
+.img1{
+	background-image: url(../img/informatica.jpg);
+	height: 20rem;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+}
+.img2{
+	background-image: url(../img/que-es-un-sistema-informatico-1.jpeg);
+	height: 20rem;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+}
+.img3{
+	background-image: url(../img/seguridad-informatica-cio.jpg);
+	height: 20rem;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+}
+.img1:hover{
+	-webkit-transform: scale(1.1);
+}
+.img2:hover{
+	-webkit-transform: scale(1.1);
+}
+.img3:hover{
+	-webkit-transform: scale(1.1);
+}
+@media only screen and (min-width: 768px) {
+	.no-padding{
+		padding: 0;
+	}
+}
+ /* main**/
+.accordion {
+  background-color: #eee;
+  color: #6867FF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.active, .accordion:hover {
+  background-color: #66CBFF; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #6599FF;
+  overflow: hidden;
+}
+
+/** article **/
+.boton{
+	width: 100%;
+	margin: 20px;
+	background-color: #eee;
+  	color: #6867FF;
+  	font-weight: 700;
+	
+}
+.boton:hover{
+	background-color: #66CBFF;
+}
+
+/*section**/
+img.delta{
+	margin-right: 10px;
+}
+
+/** footer **/
+footer.pie{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 6rem;
+	background-color: #6867FF; 
+
+}
+footer span.eco{
+	color: #6599FF;
+	font-weight: 700;
+}

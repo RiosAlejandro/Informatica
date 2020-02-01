@@ -1,0 +1,180 @@
+html{
+	font-size: 62.5%; /**reset para rems -62.5% =10px de 16... esta cuenta es para hacer que un rem valga 10px**/
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body{
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+/** Colores**/
+/*#6867FF, #6599FF, #66CBFF, #66FEFF;*/
+/** Fuentes **/
+/*font-family: 'Noto Sans', sans-serif;
+font-family: 'Martel Sans', sans-serif;*/
+
+
+/** globales**/
+.contenedor{
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4{
+	font-family: ;
+}
+
+h1{
+	font-size: 4.8rem;
+}
+h2{
+	font-size: 4rem;
+	line-height: 1;
+}
+h3{
+	font-size: 3.2rem;
+}
+h4{
+	font-size: 2.8rem;
+}
+
+/*img{
+	max-width: 100%;
+	margin-top: 2rem;
+}*/
+
+/**utilidades**/
+.centrar-texto{
+	text-align: center;
+}
+.no-margin{
+	margin:0;
+}
+
+
+/**header**/
+header.site-header {
+	height: auto;
+	padding: 20px 0; 
+	background-color: #6599FF;
+}
+div.logo{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.logo img{
+	width: 100%;
+	background-position: center;
+}
+@media only screen and (min-width: 768px) {
+	div.alfa{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+@media only screen and (min-width: 768px){
+	div.logo{	
+		margin-left: 0;
+		width: 30%;
+	}
+} 
+@media only screen and (min-width: 768px){
+	div.logo img{
+		width: 50%;
+	}	
+}
+
+/** navegacion principal **/
+.navegacion-principal{
+	text-align: center;
+	margin-top: 1rem;
+	background-color: #66FBFF;
+	border: 1px solid #66CBFF;
+}
+.navegacion-principal a{
+	margin-right: 1em;
+	text-decoration: none;
+	color: #6599FF;
+}
+.navegacion-principal a:last-of-type{
+	margin-right: 0;
+}
+/*.navegacion-principal a.active{
+	background-color: #12D1F3;
+    color: white;
+}*/
+.navegacion-principal a:hover{
+	background-color: #66CBFF;
+}
+
+/*portada*/
+.beta::before{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-attachment: fixed;
+	position: absolute;
+}
+.portada{
+	position: relative;
+	height: auto;
+}
+.portada::before{
+	background-image: url(../img/portada.jpg);
+	content: '';
+}
+
+/** article **/
+.charly{
+	margin-top: 15px;
+}
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #3CB3B2;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  background-color: #12D1F3;
+}
